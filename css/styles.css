@@ -48,6 +48,18 @@ address {
   align-items: center;
   justify-content: space-between;
 }
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
 
 @media screen and (min-width: 768px) {
   .container {
@@ -197,27 +209,38 @@ address {
 
 .hero {
   background: #2e2f42;
-  padding-top: 188px;
-  padding-bottom: 188px;
+  padding: 72px 52px;
   background-image: linear-gradient(
       rgba(46, 47, 66, 0.7),
       rgba(46, 47, 66, 0.7)
     ),
-    url(../images/people-office.jpg);
+    url(../images/Dark-bg-phone.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
-  max-width: 1440px;
+  max-width: 320px;
   margin: 0 auto;
+}
+
+@media screen and (min-device-pixel-ratio: 2),
+  (min-resolution: 192dpi),
+  (min-resolution: 2dppx) {
+  .hero {
+    background-image: linear-gradient(
+        rgba(46, 47, 66, 0.7),
+        rgba(46, 47, 66, 0.7)
+      ),
+      url(../images/Dark-bg-phone-2x.jpg);
+  }
 }
 
 .hero-title {
   font-weight: 700;
-  font-size: 56px;
-  line-height: 1.07;
+  font-size: 36px;
+  line-height: 1.1;
+  max-width: 216px;
   letter-spacing: 0.02em;
   color: #fff;
-  max-width: 496px;
   margin: 0 auto;
   text-align: center;
 }
@@ -235,7 +258,7 @@ address {
   border: none;
   background: #4d5ae5;
   box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.15);
-  margin-top: 48px;
+  margin-top: 72px;
   min-width: 169px;
   height: 56px;
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
@@ -247,6 +270,78 @@ address {
 }
 
 @media screen and (min-width: 768px) {
+  .hero {
+    padding-top: 112px;
+    padding-bottom: 112px;
+    max-width: 768px;
+    background-image: linear-gradient(
+        rgba(46, 47, 66, 0.7),
+        rgba(46, 47, 66, 0.7)
+      ),
+      url(../images/Dark-bg-tab.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+  }
+
+  @media screen and (min-device-pixel-ratio: 2),
+  (min-resolution: 192dpi),
+  (min-resolution: 2dppx) {
+  .hero {
+    background-image: linear-gradient(
+        rgba(46, 47, 66, 0.7),
+        rgba(46, 47, 66, 0.7)
+      ),
+      url(../images/Dark-bg-tab-2x.jpg);
+  }
+}
+
+
+  .hero-title {
+    font-size: 56px;
+    line-height: 1.07;
+    max-width: 496px;
+  }
+
+  .hero-botton {
+    margin-top: 36px;
+  }
+}
+
+@media screen and (min-width: 1158px) {
+  .hero {
+    padding-top: 188px;
+    padding-bottom: 188px;
+    max-width: 1440px;
+    background-image: linear-gradient(
+        rgba(46, 47, 66, 0.7),
+        rgba(46, 47, 66, 0.7)
+      ),
+      url(../images/people-office.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+  }
+  @media screen and (min-device-pixel-ratio: 2),
+  (min-resolution: 192dpi),
+  (min-resolution: 2dppx) {
+  .hero {
+    background-image: linear-gradient(
+        rgba(46, 47, 66, 0.7),
+        rgba(46, 47, 66, 0.7)
+      ),
+      url(../images/people-office-2x.jpg);
+  }
+}
+
+  .hero-title {
+    font-size: 56px;
+    line-height: 1.07;
+    max-width: 496px;
+  }
+  .hero-botton {
+    margin-top: 48px;
+  }
 }
 
 /* ===================== */
@@ -265,6 +360,10 @@ address {
 
 .features-item-list {
   width: 100%;
+}
+
+.features-icon-box {
+  display: none;
 }
 
 .features-title {
@@ -303,20 +402,16 @@ address {
   }
 }
 
-
-
-
-
 @media screen and (min-width: 1158px) {
   .container {
-    max-width: 1158px; 
+    max-width: 1158px;
   }
 
   .features {
     padding-top: 120px;
     padding-bottom: 120px;
   }
-  
+
   .features-icon-box {
     display: flex;
     align-items: center;
@@ -327,25 +422,22 @@ address {
     width: 264px;
     height: 112px;
     margin-bottom: 8px;
-   
   }
-  
-  
+
   .icon-features {
-   padding:24px 100px;
-   box-sizing: content-box;
-    
+    padding: 24px 100px;
+    box-sizing: content-box;
   }
-  
+
   .features-list {
     display: flex;
-    gap: 24px; 
+    gap: 24px;
   }
-  
+
   .features-item-list {
     width: calc((100% - 3 * 24px) / 4);
   }
-  
+
   .features-title {
     font-weight: 500;
     font-size: 20px;
@@ -354,24 +446,26 @@ address {
     color: #2e2f42;
     margin-bottom: 8px;
   }
-  
+
   .features-text {
     font-weight: 400;
     font-size: 16px;
     line-height: 1.5;
     letter-spacing: 0.02em;
     color: #434455;
-}
+  }
 }
 
 /* =====================================*/
-/* ==================TEAM============== */
+/* ==============TEAM============== */
 
 .team {
-  background: #f4f4fd;
-  padding-top: 120px;
-  padding-bottom: 120px;
+ background: #f4f4fd;
+ padding-top: 96px;
+ padding-bottom: 96px;
+
 }
+
 
 .tema-title {
   font-weight: 700;
@@ -385,19 +479,24 @@ address {
 }
 .team-list {
   display: flex;
-  gap: 24px;
+  flex-wrap: wrap;
+  gap: 72px;
+
 }
 
 .team-item {
   border-radius: 0 0 4px 4px;
-  width: 264px;
+  max-width: 264px;
   box-shadow: 0 2px 1px 0 rgba(46, 47, 66, 0.08),
     0 1px 1px 0 rgba(46, 47, 66, 0.16), 0 1px 6px 0 rgba(46, 47, 66, 0.08);
   background: #fff;
-  width: calc((100% - 3 * 24px) / 4);
+  /* width: calc((100% - 3 * 24px) / 4); */
+  margin: 0 auto;
+  
 }
 .team-box {
-  padding: 32px 0;
+  padding: 32px 0px;
+  
 }
 
 .team-img {
@@ -456,25 +555,72 @@ address {
   fill: #f4f4fd;
 }
 
+
+@media screen and (min-width: 768px) {
+
+
+  .team  {
+    padding-top: 96px;
+    padding-bottom: 96px;
+  }
+
+  .team-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap:  24px;
+  row-gap: 64px;
+  padding: 0 92px;
+  }
+
+  .team-item  {
+    width: calc((100% - 24px) / 2);
+   
+  }
+
+}
+ 
+
+
+
+
+@media screen and (min-width: 1158px) {
+.container {
+  max-width: 1158px;
+}
+
+
+.team {
+padding-top: 120px;
+padding-bottom: 120px;
+
+}
+
+.team-list {
+  display: flex;
+  gap: 24px;
+  padding: 0;
+}
+
+.team-item {
+  width: 264px;
+  width: calc((100% - 3 * 24px) / 4);
+  
+}
+}
+
+.team-box {
+  
+  padding: 32px 0;
+}
+
+
 /* ====================================== */
 
 /* ==================PORTFOLIO=============== */
-.visually-hidden {
-  position: absolute;
-  width: 1px;
-  height: 1px;
-  margin: -1px;
-  border: 0;
-  padding: 0;
-  white-space: nowrap;
-  clip-path: inset(100%);
-  clip: rect(0 0 0 0);
-  overflow: hidden;
-}
 
 .portfolio {
-  padding-top: 120px;
-  padding-bottom: 120px;
+  padding-top: 96px;
+  padding-bottom: 96px;
 }
 
 .portfolio-title {
@@ -489,7 +635,7 @@ address {
 .portfolio-list {
   display: flex;
   flex-wrap: wrap;
-  column-gap: 24px;
+  /* column-gap: 24px; */
   row-gap: 48px;
   transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
@@ -553,35 +699,66 @@ address {
   transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
+@media screen and (min-width: 768px) {
+  .portfolio-list {
+    gap: 72px 24px;
+  }
+
+  .portfolio-items {
+    width: calc((100% - 24px) / 2);
+  }
+}
+
+@media screen and (min-width: 1158px) {
+  .portfolio {
+    padding-top: 120px;
+    padding-bottom: 120px;
+  }
+
+  .portfolio-list {
+    row-gap: 48px;
+  }
+
+  .portfolio-items {
+    width: calc((100% - 2 * 24px) / 3);
+  }
+}
+
 /* ================ */
 /* =====footer===== */
 
 .footer {
   background: #2e2f42;
-  padding: 100px 0;
+  padding: 96px 0;
+  /* padding: 100px 0; */
   margin: 0 auto;
 }
 
 .footer-media {
-  display: flex;
+  display: block;
+  /* display: flex; */
+  flex-wrap: wrap;
   align-items: baseline;
+  
 }
 
 .footer-logo-box {
-  margin-right: 120px;
+  /* margin-right: 120px; */
+  margin-bottom: 72px;
 }
 
 .footer-logo {
   font-family: "Raleway", sans-serif;
   font-weight: 700;
   font-size: 18px;
-  line-height: 1.16667;
+  line-height: 1.16;
   letter-spacing: 0.03em;
   text-transform: uppercase;
   color: #4d5ae5;
   display: inline-block;
   margin-bottom: 16px;
   display: inline-block;
+  a
 }
 
 .footer-part {
@@ -600,7 +777,9 @@ address {
 /* =============FOOTER-ICON============= */
 .footer-social-box {
   width: 208px;
-  height: 80px;
+  height: 40px;
+  
+  /* height: 80px; */
 }
 
 .footer-social-text {
@@ -613,6 +792,7 @@ address {
 }
 
 .footer-social-list {
+  
   display: flex;
   gap: 16px;
 }
@@ -647,6 +827,7 @@ address {
   margin-left: auto;
   width: 453px;
   height: 80px;
+  margin-top: 72px;
 }
 
 .input-title {
@@ -659,7 +840,7 @@ address {
 }
 
 .footer-form {
-  display: flex;
+  display: block;
   justify-content: center;
   align-items: center;
   gap: 24px;
