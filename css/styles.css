@@ -1169,8 +1169,8 @@ address {
 
 
   .footer  .container{
-    max-width: 1440px;
-    padding: 100px 0;
+  max-width: 1440px;
+    padding: 100px 159px 100px 156px;
     gap: 0;
     display: flex;
     align-items: baseline;
@@ -1183,15 +1183,14 @@ address {
 
   .footer-logo-box {
     margin-right: 120px;
-    padding-left: 120px;
     margin-bottom: 0;
+    
   }
 
   .footer-social-box {
     width: 208px;
     height: 80px;
     margin-bottom: 0;
-    margin-right: 80px;
   }
 
   
@@ -1209,8 +1208,6 @@ address {
 
   .footer-subscribe-box {
     margin-left: auto;
-    padding-right: 159px;
-    
   }
 
   
@@ -1223,7 +1220,8 @@ address {
 
   .footer-input {
     width: 264px;
-    
+    height: 40px;
+
   }
 
 }
