@@ -1169,7 +1169,7 @@ address {
 
 
   .footer  .container{
-  max-width: 1440px;
+   
     padding: 100px 159px 100px 156px;
     gap: 0;
     display: flex;
@@ -1178,7 +1178,7 @@ address {
   }
 
   .footer-media {
-    
+    max-width: 1440px;
   }
 
   .footer-logo-box {
