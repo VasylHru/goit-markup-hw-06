@@ -1169,7 +1169,7 @@ address {
 
 
   .footer  .container{
-    
+    max-width: 1440px;
     padding: 100px 0;
     gap: 0;
     display: flex;
@@ -1178,7 +1178,7 @@ address {
   }
 
   .footer-media {
-    width: 1440px;
+    
   }
 
   .footer-logo-box {
@@ -1210,8 +1210,7 @@ address {
   .footer-subscribe-box {
     margin-left: auto;
     padding-right: 159px;
-    width: 264px;
-    height: 40px;
+    
   }
 
   
