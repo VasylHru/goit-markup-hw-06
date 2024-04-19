@@ -128,11 +128,10 @@ address {
 }
 
 @media screen and (min-width: 768px) {
-  
 }
 
+
 @media screen and (min-width: 1158px) {
-  
 }
 
 /* ================ */
@@ -205,6 +204,7 @@ address {
 /* ===================== */
 /* ======features====== */
 
+
 .features {
   padding-top: 96px;
   padding-bottom: 96px;
@@ -246,6 +246,7 @@ address {
 
 /* =====================================*/
 /* ==============TEAM============== */
+
 
 .team {
   background: #f4f4fd;
@@ -377,8 +378,7 @@ address {
     0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
 }
 
-.portfolio-img {
-}
+
 
 .portfolio-box {
   padding: 32px 16px;
@@ -431,6 +431,8 @@ address {
 
 /* ================ */
 /* =====footer===== */
+
+
 
 .footer .container {
   background: #2e2f42;
@@ -528,11 +530,8 @@ address {
 }
 
 /* ===========FOTER-INPUT-SUBSCRIBE========= */
-.footer-subscribe-box {
-  /* width: 453px;
-  height: 80px; 
-   margin-top: 72px;  */
-}
+
+
 
 .input-title {
   font-weight: 500;
@@ -618,6 +617,7 @@ address {
 
 /* ===============MODAL-WINDOW====================== */
 
+
 .backdrop {
   position: fixed;
   top: 0;
@@ -696,8 +696,7 @@ address {
   max-width: 360px;
 }
 
-.model-form {
-}
+
 
 .modal-field {
   margin-bottom: 8px;
@@ -787,8 +786,7 @@ address {
   color: #8e8f99;
 }
 
-.privacy-span {
-}
+
 
 .check-text span {
   display: inline-flex;
@@ -836,6 +834,7 @@ address {
 .modal-button:focus {
   background-color: #404bbf;
 }
+
 
 
 @media screen and (min-width: 768px) {
@@ -1019,9 +1018,6 @@ address {
   .footer-input-botton {
     margin: 0 auto;
   }
-
-
-
 }
 
 
@@ -1040,7 +1036,17 @@ address {
 
 
 
-@media screen and (min-width: 1158px) {
+
+
+
+
+
+
+
+
+
+
+ @media screen and (min-width: 1158px) {
 
 
   .logo {
@@ -1165,39 +1171,33 @@ address {
     width: calc((100% - 2 * 24px) / 3);
   }
 
-
-
-
-  .footer  .container{
-   
-    padding: 100px 159px 100px 156px;
+  .footer .container {
+    padding: 100px 0 100px 0;
     gap: 0;
-    display: flex;
-    align-items: baseline;
-    
+    justify-content: center;
   }
 
   .footer-media {
     max-width: 1440px;
+    padding-left: 156px;
+    padding-right: 159px;
   }
 
   .footer-logo-box {
     margin-right: 120px;
     margin-bottom: 0;
-    
+
   }
+
+
+
+
 
   .footer-social-box {
     width: 208px;
     height: 80px;
     margin-bottom: 0;
-  }
-
-  
-
-  .footer-social-list {
-    display: flex;
-    gap: 16px;
+    margin-right: 80px;
   }
 
   .footer-social-item {
@@ -1206,17 +1206,9 @@ address {
   }
 
 
-  .footer-subscribe-box {
-    margin-left: auto;
-  }
 
-  
-  .footer-form {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 24px;
-  }
+
+
 
   .footer-input {
     width: 264px;
@@ -1225,4 +1217,3 @@ address {
   }
 
 }
-
