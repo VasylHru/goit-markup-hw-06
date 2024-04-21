@@ -163,7 +163,7 @@ address {
 }
 .mob-menu-close:focus,
 .mob-menu-close:active {
-
+  background-color:#fff;
 }
 
 
